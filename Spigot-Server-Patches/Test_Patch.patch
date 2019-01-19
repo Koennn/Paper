@@ -1,0 +1,16 @@
+Index: src/main/java/net/minecraft/server/TileEntityFurnace.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/main/java/net/minecraft/server/TileEntityFurnace.java	(date 1546893828000)
++++ src/main/java/net/minecraft/server/TileEntityFurnace.java	(date 1547893357182)
+@@ -346,7 +346,7 @@
+             } else {
+                 ItemStack itemstack1 = (ItemStack) this.items.get(2);
+ 
+-                return itemstack1.isEmpty() ? true : (!itemstack1.doMaterialsMatch(itemstack) ? false : (itemstack1.getCount() < this.getMaxStackSize() && itemstack1.getCount() < itemstack1.getMaxStackSize() ? true : itemstack1.getCount() < itemstack.getMaxStackSize()));
++                return itemstack1.isEmpty();
+             }
+         } else {
+             return false;
